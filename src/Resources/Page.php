@@ -3,7 +3,7 @@
 namespace DigitalCloud\PageTool\Resources;
 
 use App\Nova\Resource;
-use DigitalCloud\NovaGrapesField\PageBuilderField;
+use DigitalCloud\NovaPageBuilderField\PageBuilderField;
 use Infinety\Filemanager\FilemanagerField;
 use Digitalcloud\MultilingualNova\Multilingual;
 use Laravel\Nova\Fields\Date;
