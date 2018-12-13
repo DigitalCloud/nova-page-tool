@@ -7,7 +7,7 @@ This tool allows you to create and manage web pages.
 You can install the package via composer:
 
 ```bash
-composer require digitalcloud/nova-page-field
+composer require digitalcloud/nova-page-tool
 ```
 
 Next you need  to create the database table by running the migrations:
