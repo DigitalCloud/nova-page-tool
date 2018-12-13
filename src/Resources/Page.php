@@ -7,6 +7,7 @@ use DigitalCloud\PageBuilderField\PageBuilderField;
 use Infinety\Filemanager\FilemanagerField;
 use Digitalcloud\MultilingualNova\Multilingual;
 use Laravel\Nova\Fields\Date;
+use Laravel\Nova\Fields\DateTime;
 use Laravel\Nova\Fields\ID;
 use Illuminate\Http\Request;
 use Laravel\Nova\Fields\Select;
@@ -57,8 +58,9 @@ class Page extends Resource
             PageBuilderField::make('Content'),
             Select::make('Status')->options(['pending' => 'Pending Review', 'draft' => 'Draft', 'published' => 'Published']),
             Select::make('Visibility')->options(['public' => 'Public', 'private' => 'Private', 'protected' => 'Protected']),
-            Date::make('Publishing on', 'scheduled_for'),
+            DateTime::make('Publishing on', 'scheduled_for'),
             FilemanagerField::make('Featured Image')->displayAsImage(),
+            Text::make('Preview')->withMeta(['value' => '<a href="page/1">Preview</a>'])->asHtml()->onlyOnIndex(),
             Multilingual::make('lang'),
         ];
     }
