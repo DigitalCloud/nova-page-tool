@@ -60,7 +60,7 @@ class Page extends Resource
             Select::make('Visibility')->options(['public' => 'Public', 'private' => 'Private', 'protected' => 'Protected']),
             DateTime::make('Publishing on', 'scheduled_for'),
             FilemanagerField::make('Featured Image')->displayAsImage(),
-            Text::make('Preview')->withMeta(['value' => '<a href="/page/1">Preview</a>'])->asHtml()->onlyOnIndex(),
+            Text::make('Preview')->withMeta(['value' => '<a href="/page/1" target="_blank">Preview</a>'])->asHtml()->onlyOnIndex(),
             Multilingual::make('lang'),
         ];
     }
