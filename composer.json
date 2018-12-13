@@ -1,6 +1,6 @@
 {
     "name": "digitalcloud/nova-page-tool",
-    "description": "A Laravel Nova tool.",
+    "description": "A Laravel Nova Page tool.",
     "keywords": [
         "laravel",
         "nova",
