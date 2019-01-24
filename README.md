@@ -18,8 +18,9 @@ php artisan migrate
 
 You can publish the required assets with:
 
+```shell
 php artisan vendor:publish --provider="DigitalCloud\PageBuilderField\FieldServiceProvider" --tag=public
-
+```
 ## Usage
 
 You must register the tool with Nova. This is typically done in the tools method of the NovaServiceProvider, in app/Providers/NovaServiceProvider.php.
