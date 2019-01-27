@@ -44,8 +44,10 @@ class ToolServiceProvider extends ServiceProvider
         Route::middleware(['nova', Authorize::class])
                 ->prefix('nova-vendor/digital-cloud/page-tool')
                 ->group(__DIR__.'/../routes/api.php');
-				
-		$this->loadRoutesFrom(__DIR__.'/../routes/web.php');
+
+        Route::middleware(['web'])
+            ->group(__DIR__.'/../routes/web.php');
+
     }
 
     /**
