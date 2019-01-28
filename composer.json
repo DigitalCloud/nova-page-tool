@@ -13,7 +13,7 @@
         "php": ">=7.1.0",
 		"spatie/laravel-sluggable": "^2.1",
         "infinety-es/nova-filemanager": "^1.1",
-		"digitalcloud/nova-page-builder-field": "*",
+		"digitalcloud/nova-page-builder-field": "^1.0",
 		"digitalcloud/multilingual-nova": "^1.0"
     },
     "autoload": {
